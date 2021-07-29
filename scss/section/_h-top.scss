@@ -5,7 +5,18 @@
 
 .help-line {
     display: flex;
-
+    @media #{$large_mobile}{
+        justify-content: center;
+    }
+    @media #{$small_mobile}{
+        justify-content: center;
+    }
+    @media #{$tab_device}{
+            justify-content: center;
+    }
+    @media #{$x_small_mobile}{
+            justify-content: center;
+    }
     a {
         color: $base_Color_3;
         font-size: 13px;
@@ -41,6 +52,16 @@
             }
         }
     }
+}
+@media #{$small_mobile}{
+    .xs-center{
+        justify-content: center;
+    } 
+}
+@media #{$x_small_mobile}{
+    .xs-center{
+        justify-content: center;
+    } 
 }
 .track {
     display: flex;

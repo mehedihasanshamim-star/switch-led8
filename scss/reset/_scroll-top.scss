@@ -14,6 +14,15 @@
     opacity: 0;
     visibility: hidden;
     z-index: 999;
+    @media #{$large_mobile}{
+        display: none;
+    }
+    @media #{$small_mobile}{
+        display: none;
+    }
+    @media #{$x_small_mobile}{
+        display: none;
+    }
     i{
         font-size: 24px;
         color: $white;
@@ -28,11 +37,11 @@
 
 .top-scroll:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: $heading_color;
 }
 
 .top-scroll:active {
-    background-color: #555;
+    background-color: $heading_color;
 }
 
 .top-scroll.show {

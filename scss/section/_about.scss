@@ -1,5 +1,8 @@
 .about{
     padding: 155px 0;
+    @media #{$x_small_mobile}{
+        padding: 60px 0;
+    }
     .container-fluid{
         max-width: 1486px;
         .p-x-22{
@@ -8,12 +11,20 @@
         }
     }
 }
+.mb-md-40{
+    @media #{$tab}{
+        margin-bottom: 50px;
+    }
+}
 .single-about{
     text-align: center;
     padding: 50px 35px;
     border-radius: 10px;
     border: 1px solid $base_color_6;
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.034);
+    @media #{$tab}{
+        margin-bottom: 40px;
+     }
 
     .about-icon{
         width: 110px;
@@ -28,10 +39,21 @@
             transform: rotate(-34deg);
         }
     }
+    .about-title{
+        @media #{$big_screen}{
+            font-size: 22px;
+        }
+        @media #{$medium_device}{
+            font-size: 17px;
+        }
+    }
     .about-sub-title{
         margin-top: 8px;
         color: #8a8a8a;
         font-size: 18px;
         font-weight: $font_medium;
+        @media #{$medium_device}{
+            font-size: 16px;
+        }
     }
 }

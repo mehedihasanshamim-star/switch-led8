@@ -1,11 +1,37 @@
 .feature{
     padding: 160px 0;
+    @media #{$large_mobile}{
+        padding: 100px 0;
+        .mb-xs-30{
+            margin-bottom: 30px;
+        }
+    }
+    @media #{$medium_device}{
+        .mt-md-50{
+            margin-top: 50px;
+        }
+    }
+    @media #{$small_mobile}{
+        padding: 100px 0;
+        .mb-xs-30{
+            margin-bottom: 30px;
+        }
+    }
+    @media #{$x_small_mobile}{
+        padding: 60px 0;
+        .mb-xs-30{
+            margin-bottom: 30px;
+        }
+    }
 }
 .single-feature{
     padding: 20px;
     .feature-img{
         margin-bottom: 45px;
         position: relative;
+        @media #{$x_small_mobile}{
+            margin-bottom: 30px;
+        }
         &::after{
             position: absolute;
             content: "";
@@ -22,6 +48,12 @@
     .sin-feature-title{
         text-transform: uppercase;
         margin-bottom: 35px;
+        @media #{$x_small_mobile}{
+            margin-bottom: 20px;
+            br{
+                display: none;
+            }
+        }
     }
     .sin-feature-details{
         color: #8a8a8a;

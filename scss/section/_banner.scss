@@ -7,14 +7,48 @@
         bottom: 0;
         right: 0;
         width: 330px;
+        @media #{$e_extra_big_screen}{
+           display: none;
+        }
+        @media #{$extra_big_screen}{
+           display: none;
+        }
+        @media #{$big_screen}{
+           display: none;
+        }
+        @media #{$medium_device}{
+           display: none;
+        }
+        @media #{$tab}{
+           display: none;
+        }
     }
 }
 
 .banner-text {
     margin-left: -235px;
+    @media #{$e_extra_big_screen}{
+        margin-left: 0;
+    }
+    @media #{$extra_big_screen}{
+        margin-left: 0;
+    }
+    @media #{$big_screen}{
+        margin-left: 0;
+    }
+    @media #{$medium_device}{
+        margin-left: 0;
+    }
+    @media #{$tab}{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
 
     .banner-hadding {
         font-weight: $font_medium;
+        @media #{$x_small_mobile}{
+            font-size: 50px;
+        }
 
         .fw-bold {
             color: $base_color_1;
@@ -43,6 +77,13 @@
         max-width: 240px;
         font-size: 28px;
         background-image: url(../img/Polygon-1.png);
+        @media #{$tab}{
+            padding-top: 15px;
+            padding-bottom: 15px;
+         }
+        @media #{$x_small_mobile}{
+            font-size: 16px;
+         }
     }
 
     .form-select:focus {

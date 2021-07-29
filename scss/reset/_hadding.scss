@@ -46,3 +46,8 @@ $h5_line_height: 1.3;
 .font_800 {
     font-weight: 800 !important;
 }
+h2{
+    @media #{$x_small_mobile}{
+        font-size: 36px;
+    }
+}
