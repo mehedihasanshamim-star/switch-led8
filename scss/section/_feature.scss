@@ -1,0 +1,29 @@
+.feature{
+    padding: 160px 0;
+}
+.single-feature{
+    padding: 20px;
+    .feature-img{
+        margin-bottom: 45px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 62px;
+            width: 110px;
+            border-radius: 31px;
+            transform: translate(-50%, -50%) rotate(34deg);
+            left: 50%;
+            top: 50%;
+            z-index: -1;
+            background-color: $base_color_6;
+        }
+    }
+    .sin-feature-title{
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    .sin-feature-details{
+        color: #8a8a8a;
+    }
+}

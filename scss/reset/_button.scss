@@ -1,0 +1,25 @@
+/******** base color css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+%common-btn {
+    display: inline-block;
+    padding: 16px 42px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 47px;
+    @include transform_time(.4s);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $base_color_1;
+    color: $white;
+    
+        &:hover {
+            background-color: $base_Color_3;
+        }
+    
+}

@@ -1,0 +1,69 @@
+.header-top {
+    background-color: $base_Color_4;
+    padding: 17px 0;
+}
+
+.help-line {
+    display: flex;
+
+    a {
+        color: $base_Color_3;
+        font-size: 13px;
+        font-weight: $font_medium;
+    }
+
+    .tel-icon {
+        display: inline-block;
+        height: 27px;
+        width: 27px;
+        background-color: $base_color_1;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 27px;
+        margin-right: 10px;
+
+        i {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    ul{
+        li{
+            margin: 0 3px;
+            a{
+                i{
+                    color: $base_color_5;
+                }
+            }
+        }
+    }
+}
+.track {
+    display: flex;
+
+    a {
+        display: inline-block;
+        height: 27px;
+        width: 27px;
+        background-color: $base_color_1;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 27px;
+
+        i {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    p {
+        color: $base_Color_3;
+        font-size: 13px;
+        font-weight: $font_medium;
+        margin-left: 10px;
+        display: inline-block;
+    }
+}

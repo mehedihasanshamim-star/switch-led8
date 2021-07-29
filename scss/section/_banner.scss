@@ -1,0 +1,52 @@
+.banner {
+    padding: 96px 0;
+    position: relative;
+
+    .banner-bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 330px;
+    }
+}
+
+.banner-text {
+    margin-left: -235px;
+
+    .banner-hadding {
+        font-weight: $font_medium;
+
+        .fw-bold {
+            color: $base_color_1;
+        }
+    }
+
+    .banner-titel {
+        font-weight: $font_medium;
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 39px;
+    }
+
+    .banner-btn {
+        @extend %common-btn;
+        margin-bottom: 40px;
+    }
+}
+
+.banner-select {
+    .form-select {
+        border-color: $base_color_1;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-radius: 8px;
+        max-width: 240px;
+        font-size: 28px;
+        background-image: url(../img/Polygon-1.png);
+    }
+
+    .form-select:focus {
+        border-color: none !important;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,25 @@
+.zoom-in-effect {
+    .masonry-img {
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .zoom-in-img {
+        transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    &:hover .zoom-in-img {
+        transform: scale(1.1);
+    }
+}
+@keyframes left-right{
+    0%{
+        transform:translateX(0px);
+    }
+    50%{
+        transform:translateX(-2px);
+    }
+    100%{
+        transform:translateX(2px);
+    }
+} 
